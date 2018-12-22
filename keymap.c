@@ -40,7 +40,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
              KC_NO,           KC_Z,   KC_U,  KC_I,   KC_O,   KC_P,             KC_NO,
                               KC_H,   KC_J,  KC_K,   KC_L,   LT(MDIA, KC_NO),  LT(SYMB, KC_NO),
              MEH_T(KC_NO),    KC_N,   KC_M,  KC_COMM,KC_DOT, CTL_T(KC_SLSH),   KC_RSFT,
-                                        LGUI(KC_Z), KC_UP,KC_DOWN, KC_LEFT, KC_RIGHT,
+                                           LGUI(KC_Z), KC_UP,KC_DOWN, KC_LEFT, KC_RIGHT,
              KC_RGUI,        KC_RALT,
              KC_NO,
              KC_NO,KC_TAB, KC_ENT
@@ -60,7 +60,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
        // right hand
        KC_NO, KC_F6,   KC_F7,  KC_F8,   KC_F9,   KC_F10,  KC_F11,
        KC_NO, KC_UP,   KC_7,   KC_8,    KC_9,    KC_ASTR, KC_F12,
-                KC_DOWN, KC_4,   KC_5,    KC_6,    KC_PLUS, KC_NO,
+              KC_DOWN, KC_4,   KC_5,    KC_6,    KC_PLUS, KC_NO,
        KC_NO, KC_AMPR, KC_1,   KC_2,    KC_3,    KC_BSLS, KC_NO,
                          KC_NO,KC_DOT,  KC_0,    KC_EQL,  KC_NO,
        RGB_TOG, RGB_SLD,
@@ -70,23 +70,23 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 [MDIA] = LAYOUT_ergodox(
     // left hand
-       KC_NO, KC_NO, KC_NO,   KC_NO,    KC_NO,    KC_NO, KC_NO,
-       KC_NO, KC_NO, KC_NO,   KC_MS_U,  KC_NO,    KC_NO, KC_NO,
-       KC_NO, KC_NO, KC_MS_L, KC_MS_D,  KC_MS_R,  KC_NO,
-       KC_NO, KC_NO, KC_NO,   KC_NO,    KC_NO,    KC_NO, KC_NO,
-       KC_NO, KC_NO, KC_NO,   KC_BTN1,  KC_BTN2,
-                                                  KC_NO,  KC_NO,
-                                                          KC_NO,
-                                            KC_NO, KC_NO, KC_NO,
+       KC_NO, KC_NO,          KC_NO,         KC_NO,          KC_NO,         KC_NO,          KC_NO,
+       KC_NO, LGUI(KC_LEFT),  LALT(KC_LEFT), KC_UP,          LALT(KC_LEFT), LGUI(KC_RIGHT), KC_NO,
+       KC_NO, KC_NO,          KC_LEFT,       KC_DOWN,        KC_RIGHT,      KC_NO,
+       KC_NO, KC_NO,          KC_NO,         KC_NO,          KC_NO,         KC_NO,          KC_NO,
+       KC_NO, KC_NO,          KC_MS_ACCEL2,  KC_MS_ACCEL1,   KC_MS_ACCEL0,
+                                                            BL_TOGG,  KC_NO,
+                                                                      KC_NO,
+                                                     BL_DEC, BL_INC,  KC_NO,
     // right hand
-       KC_NO,  KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-       KC_NO,  KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
-               KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_MPLY,
-       KC_NO,  KC_NO, KC_NO, KC_MPRV, KC_MNXT, KC_NO, KC_NO,
-                          KC_VOLU, KC_VOLD, KC_MUTE, KC_NO, KC_NO,
+       KC_NO,  KC_NO, KC_NO,        KC_NO,      KC_NO,          KC_NO, KC_NO,
+       KC_NO,  KC_NO, KC_MS_WH_UP,  KC_MS_UP,   KC_MS_WH_DOWN,  KC_NO, KC_NO,
+               KC_NO, KC_MS_LEFT,   KC_MS_DOWN, KC_MS_RIGHT,    KC_NO, KC_NO,
+       KC_NO,  KC_NO, KC_NO,        KC_NO,      KC_NO,          KC_NO, KC_NO,
+                                           KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,
        KC_NO, KC_NO,
        KC_NO,
-       KC_NO, KC_NO, KC_NO
+       KC_NO, KC_MS_BTN2, KC_MS_BTN1
 ),
 
 [NPAD] = LAYOUT_ergodox(
