@@ -54,18 +54,18 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
        KC_NO,     LSFT(KC_7), LSFT(KC_RBRACKET),RSFT(KC_8), RSFT(KC_9), KC_EQUAL,
        KC_SLASH,  RALT(KC_7), LSFT(KC_4),       RALT(KC_5), RALT(KC_6), LSFT(KC_2),       KC_NO,
        KC_NO,     KC_NO,      LSFT(KC_5),       RALT(KC_L), KC_NO,
-                                                                                  KC_NO,  KC_AMPERSAND,
-                                                                                           KC_ASTERISK,
-                                                                    RALT(KC_7),  KC_NO,  KC_LEFT_PAREN,
+                                                                                  KC_NO,  KC_NO,
+                                                                                          KC_NO,
+                                                                    RALT(KC_7),  KC_NO,   KC_NO,
        // right hand
        KC_F7, KC_F8,        KC_F9,        KC_F10,         KC_F11,             KC_F12,       KC_NO,
        KC_NO, KC_BSLASH,    KC_SLASH,     KC_RBRACKET,    LSFT(KC_RBRACKET),  KC_NO,        KC_NO,
               KC_GRAVE,     KC_KP_EQUAL,  LSFT(KC_GRAVE), KC_NONUS_BSLASH,    KC_NO,        KC_NO,
        KC_NO, KC_CIRCUMFLEX,KC_NO,        KC_COMMA,       KC_DOT,             KC_NO,        KC_NO,
                             KC_NO,        RSFT(KC_COMMA), RSFT(KC_DOT),       KC_NO,        KC_NO,
-       KC_RIGHT_PAREN, KC_NO,
-       KC_UNDERSCORE,
-       KC_PLUS, KC_NO, KC_CIRCUMFLEX
+       KC_NO, KC_NO,
+       KC_NO,
+       KC_NO, KC_NO, KC_CIRCUMFLEX
 ),
 
 [MDIA] = LAYOUT_ergodox(
@@ -75,7 +75,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
        KC_NO, KC_NO,          KC_LEFT,       KC_DOWN,        KC_RIGHT,        KC_NO,
        KC_NO, KC_NO,          KC_NO,         KC_NO,          KC_NO,           KC_NO,          KC_NO,
        KC_NO, KC_NO,          KC_MS_ACCEL2,  KC_MS_ACCEL1,   KC_MS_ACCEL0,
-                                                                             RGB_TOG, RGB_MODE_XMAS,
+                                                                             RGB_TOG,         KC_NO,
                                                                                             RGB_HUI,
                                                                           RGB_VAD, RGB_VAI, RGB_HUD,
     // right hand
@@ -84,15 +84,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                KC_NO, KC_MS_LEFT,   KC_MS_DOWN, KC_MS_RIGHT,    KC_NO, KC_NO,
        KC_NO,  KC_NO, KC_NO,        KC_NO,      KC_NO,          KC_NO, KC_NO,
                       KC_NO,        KC_NO,      KC_NO,          KC_NO, KC_NO,
-       KC_NO, KC_NO,
-       KC_NO,
-       KC_NO, KC_MS_BTN2, KC_MS_BTN1
+       RGB_MODE_PLAIN,  KC_NO,
+       RGB_MODE_FORWARD,
+       KC_NO,           KC_MS_BTN2, KC_MS_BTN1
 ),
 
 [NPAD] = LAYOUT_ergodox(
     // left hand
        RESET, KC_NO, KC_NO, KC_NO, KC_NO,KC_NO, KC_NO,
-       KC_NO, KC_NO, KC_7,  KC_8,  KC_9, KC_NO, KC_NO,
+       EPRM,  KC_NO, KC_7,  KC_8,  KC_9, KC_NO, KC_NO,
        KC_NO, KC_NO, KC_4,  KC_5,  KC_6, KC_NO,
        KC_NO, KC_NO, KC_1,  KC_2,  KC_3, KC_NO, KC_NO,
        KC_NO, KC_NO, KC_NO, KC_0,  KC_NO,
