@@ -113,7 +113,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 void eeconfig_init_user(void) {
   rgblight_enable();
-  rgblight_sethsv_cyan();
+  rgblight_sethsv_noeeprom_orange();
   rgblight_mode(1);
   user_config.rgb_layer_change = true;
   eeconfig_update_user(user_config.raw);
@@ -168,7 +168,7 @@ void matrix_init_user(void) {
 
   if (user_config.rgb_layer_change) {
     rgblight_enable_noeeprom();
-    rgblight_sethsv_noeeprom_cyan();
+    rgblight_sethsv_noeeprom_orange();
     rgblight_mode_noeeprom(1);
   }
 }
@@ -185,7 +185,7 @@ uint32_t layer_state_set_user(uint32_t state) {
   switch (biton32(state)) {
     case SYMB:
         ergodox_right_led_1_on();
-        if (user_config.rgb_layer_change) { rgblight_sethsv_noeeprom_pink(); rgblight_mode_noeeprom(1); }
+        if (user_config.rgb_layer_change) { rgblight_sethsv_noeeprom_red(); rgblight_mode_noeeprom(1); }
         break;
     case MDIA:
         ergodox_right_led_2_on();
@@ -217,7 +217,7 @@ uint32_t layer_state_set_user(uint32_t state) {
         if (user_config.rgb_layer_change) { rgblight_sethsv_noeeprom_white(); rgblight_mode_noeeprom(1); }
         break;
     default:
-        if (user_config.rgb_layer_change) { rgblight_sethsv_noeeprom_cyan(); rgblight_mode_noeeprom(1); }
+        if (user_config.rgb_layer_change) { rgblight_sethsv_noeeprom_orange(); rgblight_mode_noeeprom(1); }
         break;
     }
   return state;
