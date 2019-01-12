@@ -49,11 +49,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 [SYMB] = LAYOUT_ergodox(
        // left hand
-       KC_NO,     KC_F1,      KC_F2,            KC_F3,      KC_F4,      KC_F5,            KC_F6,
-       KC_NO,     LSFT(KC_1), LSFT(KC_MINUS),   RALT(KC_8), RALT(KC_9), LSFT(KC_BSLASH),  KC_NO,
-       KC_NO,     LSFT(KC_7), LSFT(KC_RBRACKET),RSFT(KC_8), RSFT(KC_9), KC_EQUAL,
-       KC_SLASH,  RALT(KC_7), LSFT(KC_4),       RALT(KC_5), RALT(KC_6), LSFT(KC_2),       KC_NO,
-       KC_NO,     KC_NO,      LSFT(KC_5),       RALT(KC_L), KC_NO,
+       KC_NO,     KC_F1,      KC_F2,            KC_F3,            KC_F4,      KC_F5,      KC_F6,
+       KC_NO,     LSFT(KC_1), LSFT(KC_MINUS),   LSFT(KC_BSLASH),  RALT(KC_8), RALT(KC_9), KC_NO,
+       KC_NO,     LSFT(KC_7), LSFT(KC_RBRACKET),KC_EQUAL,         RSFT(KC_8), RSFT(KC_9),
+       KC_SLASH,  RALT(KC_7), LSFT(KC_4),       LSFT(KC_2),       RALT(KC_5), RALT(KC_6), KC_NO,
+       KC_NO,     KC_NO,      LSFT(KC_5),       RALT(KC_L),       KC_NO,
                                                                                   KC_NO,  KC_NO,
                                                                                           KC_NO,
                                                                     RALT(KC_7),  KC_NO,   KC_NO,
